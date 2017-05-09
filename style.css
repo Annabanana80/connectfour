@@ -1,0 +1,68 @@
+*{
+	font-family: 'Righteous', cursive;
+	
+}
+body{
+	background-image: url("http://blog.spoongraphics.co.uk/wp-content/uploads/2013/retro-neon/8.jpg");
+	background-size:cover;
+	height:auto;
+	width: 100%;
+}
+/*title*/
+#gametitle{
+	text-align: center;
+	margin-top: 5%;
+	font-size: 100px;
+	text-shadow:1px 1px 1px blue, 2px 2px 2px yellow;
+	color:white;
+}
+/*game board*/
+table, td {
+	border: 1px solid black;
+
+}
+table {
+	height:75%;
+	width:75%;
+	background-color: yellow;
+	border-right: 50px solid blue;
+	border-left: 50px solid blue;
+	margin: 0 auto;
+	margin-top:5%;
+	color:white;
+}
+td {
+	border-radius:100px;
+	background-color: white;
+}
+/*buttons*/
+button {
+	margin: 0 auto;
+	display: block;
+	text-align:center;
+	text-shadow:1px 1px 1px blue, 2px 2px 2px yellow;
+	border-radius: 15px 50px;
+	padding:20px;
+	width:100px;
+	height:75px;
+	font-size: 110%;
+	background-color:blue;
+	color:white;
+}
+#playAgain {
+	margin-top:5%;
+}
+/*player names*/
+
+#playerOne{
+	margin-top:5%;
+	font-size:200%;
+}
+#playerTwo{
+	font-size:200%;
+}
+h4, div{
+	text-align:center;
+	color:white;
+	text-shadow:1px 1px 1px blue, 2px 2px 2px yellow;
+}
