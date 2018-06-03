@@ -4,20 +4,19 @@
 	<title>Connect Four!</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-3.1.1.js"
-  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <script type="text/javascript" src="connectFour.js"></script>
 	<script type="text/javascript" src="app.js"></script>
 </head>
 <body>
 	<h1 id="gametitle">Connect Four</h1>
-	<button id="start">Start!</button>
+		<h3>It is <span id="player">red</span>'s Turn</h3>
 		<div id="board"></div>
-		<div id="playerOne"></div>
-			<h4>Versus</h4>
-		<div id="playerTwo"></div>
-		
+	<div id="buttons">
 		<button id="playAgain">Play Again?</button>
+		<button id="chColor">Change Colors</button>
+	</div>	
 </body>
 </html>
