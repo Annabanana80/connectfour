@@ -17,23 +17,22 @@ body{
 	color:white;
 }
 /*game board*/
-table, td {
+#board{
+	background-color: yellow;
+	display: table;
+	margin: 0 auto;
 	border: 1px solid black;
+	box-shadow: 10px 10px 5px black;
 
 }
-table {
-	height:75%;
-	width:75%;
-	background-color: yellow;
-	border-right: 50px solid blue;
-	border-left: 50px solid blue;
-	margin: 0 auto;
-	margin-top:5%;
-	color:white;
-}
-td {
-	border-radius:100px;
+.col{
+	width:50px;
+	height:50px;
+	display: inline-block;
 	background-color: white;
+	border-radius: 50%;
+	border: 1px solid black;
+	margin: 5px;
 }
 /*buttons*/
 button {
@@ -48,6 +47,9 @@ button {
 	font-size: 110%;
 	background-color:blue;
 	color:white;
+}
+#start{
+	margin-bottom: 20px;
 }
 #playAgain {
 	margin-top:5%;
