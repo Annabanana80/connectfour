@@ -1,18 +1,23 @@
+//when you click the button, an alert will pop up and ask for the player's names
 $(document).ready(function(){
 
 	const connectFour = new ConnectFour('#board');
 
+	connectFour.move = function(){
+		$('#player').text(connectFour.player);
+	}
 
-	$('#start').on('click', function(text){
-	var first=prompt('Player 1, what is your name?');
-	$('#playerOne').append().html(first);
-	var second=prompt('Player 2, what is your name?');
-	$('#playerTwo').append().html(second); //player's names will be appended to the board either to the sides of the start button or play again button
-	
+	$('#playAgain').on('click', function(){
+		setTimeout(function() { 
+			location.reload() },1000);
+	});
+
+	$('#chColor').on('click',function(){
+		var randomColor='rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+		$('#board').css('background-color', randomColor);
+		$('#gametitle').css('color', randomColor);
+		$('button').css('background-color', randomColor);
 	});
 	
-	var playAgain =$('#playAgain');
-
-	var counter=1;
-	
 })
+
